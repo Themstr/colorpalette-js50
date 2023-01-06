@@ -1,0 +1,45 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #111111;
+    color:white;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+}
+.panel{
+    padding:1em;
+    margin: 1em;
+    color: #111111;
+    height: 80vh;
+    border-radius: 12px;
+    cursor: pointer;
+    flex:2;
+    position: relative;
+    transition: 0.7s ease-in;
+}
+.active{
+    flex:7
+}
+.panel h1{
+    position: absolute;
+    bottom: 0.5em;
+    left: 0.5em;
+}
+.panel h1 span{
+    display: hidden;
+}
+@media (max-width: 480px) {
+    .container{
+        width: 100vw;
+        flex-direction: column;
+    }
+}
