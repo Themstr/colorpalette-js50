@@ -6,6 +6,7 @@ body{
     display: grid;
     place-items: center;
     height: 100vh;
+    font-family: monospace;
     background-color: #111111;
     color:white;
 }
